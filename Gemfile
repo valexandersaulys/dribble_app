@@ -32,6 +32,15 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
+
+
+# My Added Gems
+gem 'haml', '~> 4.0.6'	# better than html
+gem 'simple_form', '~> 3.1.0'	# for forms
+gem 'devise', '~> 3.4.1'	# for user-login
+gem 'paperclip', '~> 4.2.1'	# for image upload
+
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
