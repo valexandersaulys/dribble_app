@@ -23,12 +23,22 @@ class PostsController < ApplicationController
 	end
 
 	def edit
+		# Calls from before_action
 	end
 
 	def update
+		# We are already finding the posts from the before_action
+
+		if @post.update(post_params)
+			redirect_to @post
+		else
+			render 'edit'
+		end
 	end
 
 	def destroy
+		@post.destroy
+		redirect_to root_path
 	end
 
 
