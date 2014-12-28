@@ -39,6 +39,7 @@ gem 'haml', '~> 4.0.6'	# better than html
 gem 'simple_form', '~> 3.1.0'	# for forms
 gem 'devise', '~> 3.4.1'	# for user-login
 gem 'paperclip', '~> 4.2.1'	# for image upload
+gem 'acts_as_votable', '~> 0.10.0' # for upvoting and such
 
 
 group :development, :test do
