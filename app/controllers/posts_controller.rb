@@ -51,7 +51,7 @@ class PostsController < ApplicationController
 
 	def post_params
 		# Need to permit the bits creates in the db:migrate file
-		params.require(:post).permit(:title, :link, :description)
+		params.require(:post).permit(:title, :link, :description, :image)
 	end
 
 end
